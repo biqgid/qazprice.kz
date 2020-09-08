@@ -1,0 +1,75 @@
+.product span {
+	color: #008ace;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0, 137, 255, 0.3);
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 7px;
+}
+.product select {
+	background-image: none;
+	border: 1px solid #b3b7c0;
+	background: #e4ebf5;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff;
+}
+.ppsort > span{
+	display: inline-block;
+	background-color: #e4ebf5;
+	box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff94;
+	border-radius: 3px;
+	padding: 10px 8px;
+	text-align: left;
+	border: 0;
+	cursor: pointer;
+	margin: 5px;
+}
+.ppsort > span:hover {
+    border-radius: 5px;
+    box-shadow: inset 0rem 0rem 0rem #c8d0e7, inset 0rem 0rem 0rem #ffffff2e;
+    background: #ced6ea;
+}
+.ppsort > span:activ {
+    border-radius: 5px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #ffffff2e;
+    background: #d5ddeeba;
+}
+.pp-sort {
+	border-bottom: 1px solid rgb(4 107 133);
+	display: block;
+	font-weight: bold;
+	margin-top: 7px;
+	margin-bottom: 6px;
+	padding: 5px 0;
+}
+#apps{
+	width: 100%;
+	padding: 10px;
+	border-radius: 8px;
+	/*box-shadow: 0 0 6px 0 rgba(0,0,0,.04), 0 4px 10px 0 rgba(13,35,67,.25);*/
+	box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #fff;
+}
+.calcInfo > div > label {
+	color: #9baacf;
+	display: contents;
+}
+
+.calcInfo > div > span {
+    display: inline-block;
+    background-color: #e4ebf5;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff94;
+    border-radius: 3px;
+    padding: 5px 8px;
+    text-align: left;
+    border: 0;
+    cursor: pointer;
+    margin: 5px;
+}
+.calcInfo > div > .active{
+    border-radius: 5px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff;
+    color: #9baacf;
+	cursor: default;
+}

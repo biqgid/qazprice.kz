@@ -1,0 +1,162 @@
+.combo {
+	display: block;
+	width: 100%;
+	position: relative;
+}
+
+.combo::after {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+	border-right: 2px solid rgba(0, 0, 0, 0.5);
+	content: '';
+	display: block;
+	height: 12px;
+	pointer-events: none;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translate(0, -65%) rotate(45deg);
+	width: 12px;
+}
+
+.combo-input {
+	z-index: 1;
+	margin-right: 5px;
+	outline: none;
+}
+
+.open .combo-input {
+	border-radius: 4px 4px 0 0;
+}
+
+.combo-label {
+	display: block;
+	font-size: 20px;
+	font-weight: 100;
+	margin-bottom: 0.25em;
+}
+
+.combo-menu {
+border-bottom: 0;
+    border-radius: 0 0 4px 4px;
+    display: none;
+    max-height: 300px;
+    overflow-y: scroll;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 100;
+}
+.combo-menu:before {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: 100%;
+	right: 13px;
+	border-width: 0 8px 8px 8px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255) transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+    width: 15px;
+    background-image: -webkit-linear-gradient(#347f93, #358093);
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track {
+	border-width: 0;
+}
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+.open .combo-menu {
+    display: block;
+    box-shadow: 0 1px 2pc rgba(48,29,40,.15);
+    background: #e4ebf5;
+}
+
+.combo-option {
+background: #e4ebf5;
+	padding: 10px;
+	height: 40px;
+	margin: 0px 5px;
+}
+
+
+.combo-option:hover {
+    border-radius: 5px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #ffffff2e;
+    background: #d5ddeeba;
+}
+
+.combo-option.option-selected {
+	padding-right: 30px;
+	position: relative;
+}
+
+.combo-option.option-selected::after {
+border-bottom: 2px solid #046b85;
+    border-right: 2px solid #046b85;
+	content: '';
+	height: 16px;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translate(0, -50%) rotate(45deg);
+	width: 8px;
+}
+
+/* multiselect list of selected options */
+.selected-options {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.selected-options li {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.remove-option {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    transform: translate(0, -37%) rotate(0deg);
+    border-radius: 25px;
+}
+.remove-option1 {
+	display: flex;
+	width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.04), 0 4px 10px 0 rgba(13,35,67,.25);
+}
+
+.remove-option:focus {
+	outline: 3px solid transparent;
+}
+
+.remove-option::before,
+.remove-option::after {
+    border-right: 2px solid #71757a;
+    content: "";
+    height: 1em;
+    right: 1.15em;
+    position: absolute;
+}
+
+.remove-option::before {
+	transform: translate(0, -50%) rotate(45deg);
+}
+
+.remove-option::after {
+	transform: translate(0, -50%) rotate(-45deg);
+}

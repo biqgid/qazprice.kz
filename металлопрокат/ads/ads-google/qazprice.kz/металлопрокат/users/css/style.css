@@ -1,0 +1,104 @@
+.profile-menu {
+	list-style-type: none;
+	
+}
+.profile-menu li:last-child {
+	border-bottom: 1px solid #00b98a;
+}
+.profile-menu li a {
+	color: #636363;
+	text-decoration: none !important;
+}
+.myProfile{
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.myProfile .img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/man-icon.png);
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.OrderHistory{
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.OrderHistory .img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/order-history.png);
+    background-size: cover;
+    margin-right: 5px;
+}
+.catrProduct{
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.catrProduct .img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/cart.png);
+    background-size: cover;
+    margin-right: 5px;
+}
+.catrProduct .label-place {
+	padding: 0;
+}
+.catrProduct .label-place .jqcart-cart-label {
+	background: none;
+	box-shadow: none;
+}
+.catrProduct .label-place .jqcart-cart-label span {
+	background: none;
+	padding: 0;
+	color: #636363;
+	text-decoration: underline;
+}
+
+.exit {
+	text-align: center;
+	padding: 15px 0;
+}
+#profile_content {
+	border-left: 1px solid #00b98a;
+}
+.clear {
+	clear: both;
+}
+.content-info {
+
+}
+.content-info ul {
+	list-style-type: none;
+	font-size: 15px;
+}
+ul.table li {
+    border-bottom: 1px dashed;
+    margin: 15px 0;
+    color: #636363;
+}
+.edit {
+	padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+#edit-form div {
+	margin: 22px 0;
+}
+#edit-form div input {
+	padding: 3px 10px;
+}

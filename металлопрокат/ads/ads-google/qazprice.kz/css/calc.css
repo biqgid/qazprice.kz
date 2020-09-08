@@ -1,0 +1,309 @@
+.modalForm,.yes{
+	position:fixed;
+	left:0
+}
+.hide-form-price span{
+	display:block!important;
+	width:100%!important
+}
+.hide-form{
+	display:none;
+}
+.yes{
+	background:0 0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:9999;
+	display:flex;
+	background-color: #000000ab;
+	justify-content:center;
+	align-items:center
+}
+.general-block{
+	background: #e4ebf5;
+	padding: 40px;
+	position: relative;
+	width: 50%;
+	border-radius: 8px;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,.04), 0 4px 10px 0 rgba(13,35,67,.25);
+}
+.yes-body{
+	padding-left:10px
+}
+.yes-body label{
+	display:block;
+	margin: 10px 18px 0;
+}
+.add_item{
+	display:block;
+	margin-top:10px
+}
+#yes-exit{
+	position:absolute;
+	top:10px;
+	right:10px;
+	font-size:25px;
+	cursor:pointer;
+}
+.yes-body input{
+	width: 100%;
+	padding: 10px 17px;
+	border-radius: 5px;
+}
+#w,#z{
+    background-image: none;
+    border: 1px solid #e4ebf5;
+    background: #e4ebf5;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #ffffffb5, inset -0.2rem -0.2rem 0.5rem #c8d0e7a6;
+}
+.flex-style{
+	display:flex;
+	justify-content:space-between;
+	padding:0 5px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#c1c1c1
+}
+
+.flex-style p{
+	margin:0;
+	width:16%
+}
+
+.services div a{
+    width: 25%;
+    border-right: 1px solid #d0d8e3;
+	padding: 10px 5px;
+}
+.services div span{
+    width: 18%;
+    border-right: 1px solid #d0d8e3;
+    padding: 10px 2px;
+}
+.services div span:last-child{
+	border:0
+}
+#submit,.parent-calc{
+}
+.parent-calc{
+display: flex;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #d0d8e3;
+    background: #e4ebf5;
+    width: 100%;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin: 2px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #ffffffb5, inset -0.2rem -0.2rem 0.5rem #c8d0e7;
+}
+.parent-calc:hover{
+background: #d5ddeeba;
+    box-shadow: 0 1px 2pc rgb(228 235 245);
+    transition: .5s box-shadow;
+}
+.btn-cart-info{
+	position: fixed;
+	top: 0;
+	left: 50%;
+	justify-content: center;
+	align-items: center;
+	background-color: #F44336;
+	z-index: 11111;
+	color: #fff;
+	padding: 10px;
+	border-radius: 0px 0px 15px 15px;
+}
+.false{
+	padding:10px 0;
+	color:red;
+	font-size:16px;
+	font-weight:700
+}
+.modalForm{
+	top:0;
+	right:0;
+	bottom:0;
+	background:0 0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font:12px 'Lucida Sans Unicode','Trebuchet MS',Arial,Helvetica;
+	margin:0
+}
+#login{
+
+	width:525px;
+	position:relative;
+}
+.exit-form{
+	position:absolute;
+	top:0;
+	right:10px;
+	font-size:26px;
+	cursor:pointer
+}
+#login:before{
+	content:'';
+	position:absolute;
+	z-index:-1;
+	border:1px dashed #ccc;
+}
+#login fieldset{
+	border:0;
+	padding:0;
+	margin:0
+}
+#inputs input{
+	background: #ffffff;
+	padding: 15px 15px 15px 30px;
+	margin: 10px;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+}
+#username{
+	background-position:5px -2px!important
+}
+#password{
+	background-position:5px -52px!important
+}
+#inputs input:focus{
+	background-color:#fff;
+	border-color:#e8c291;
+	outline:0;
+	-moz-box-shadow:0 0 0 1px #e8c291 inset;
+	-webkit-box-shadow:0 0 0 1px #e8c291 inset;
+	box-shadow:0 0 0 1px #e8c291 inset
+}
+#actions{
+	margin:25px 0 0
+}
+
+#login #actions a{
+	color:#3151A2!important;
+	float:right;
+	font-weight:400!important;
+	line-height:35px;
+	margin-left:10px;
+	padding:0!important
+}
+#back{
+	display:block;
+	text-align:center;
+	position:relative;
+	top:60px;
+	color:#999
+}
+.vladmaxi-top{
+	line-height:24px;
+	background:rgba(0,0,0,.08);
+	text-transform:uppercase;
+	z-index:9999;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	font-family:calibri;
+	font-size:13px;
+	box-shadow:1px 0 2px rgba(0,0,0,.2);
+	-webkit-animation:slideOut .5s ease-in-out .3s backwards
+}
+@-webkit-keyframes slideOut{
+	0%{
+		top:-30px;
+		opacity:0
+	}
+	100%{
+		top:0;
+		opacity:1
+	}
+}
+.vladmaxi-top a{
+	padding:0 10px;
+	letter-spacing:1px;
+	color:#333;
+	text-shadow:0 1px 1px #fff;
+	display:block;
+	float:left
+}
+.vladmaxi-top a:hover{
+	background:#fff
+}
+.vladmaxi-top span.right{
+	float:right
+}
+.vladmaxi-top span.right a{
+	float:left;
+	display:block
+}
+#comment-form input.send:hover,#forms input.send:hover,.bar-color,.bb2,.bb2:before,.btn.read-post,.navbar-default .navbar-toggle .icon-bar,.our-testimonials h3,.our-testimonials h3:before,.price-title,.team h6,.team h6:before,.timelineFlat .mCS-light-thin>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.timelineFlat.timelineFlatBlog .item .post_date,.tooltip-content,footer .social:before{
+	background-color:#FFF
+}
+.title-colory{
+	font-size:20px;
+	background-color:#2BA1D9
+}
+.title-colory-1{
+	font-size:12px;
+	background-color:#FFCF31
+}
+.title-colory-2{
+	font-size:12px;
+	background-color:#00B98A
+}
+.price-title-1{
+	background-color:#2BA1D9
+}
+.price-title-2{
+	background-color:#FFCF31
+}
+.price-title-3{
+	background-color:#00B98A
+}
+.p{
+	font-size:22px;
+	font-weight:700
+}
+::selection{
+	background:#c1d7dc
+}
+::-moz-selection{
+	background:#4A4DE7;
+	color:#fff
+}
+
+.dropdown-menu,.line{
+	border-top: 2px solid #eb7c1c;
+}
+.line-1{
+	border-top:1px solid #4A4DE7
+}
+#comment-form input.send,#forms input.send,.btn.read-post,.pagination>li>a:hover,.pagination>li>span.current,.pagination>li>span:hover,footer .social ul li a:hover{
+	border:1px solid #4A4DE7
+}
+#comment-form input.send:focus,#forms input.send:focus,.widget input.search:focus{
+	border-color:#4A4DE7
+}
+button.portfolio.mfp-arrow-right:hover:before{
+	border-left-color:#4A4DE7
+}
+button.portfolio.mfp-arrow-left:hover:before{
+	border-right-color:#4A4DE7
+}
+.tooltip-content:before{
+	border-color:#4A4DE7 transparent transparent
+}
+@media screen and (max-width:767px){
+	.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li.active,.navbar-default .navbar-nav>li>a:hover{
+		border-color:transparent
+	}
+}
+@media screen and(max-width:450px){
+	.general-block{
+		width:80%
+	}
+}

@@ -1,0 +1,58 @@
+RewriteEngine on
+RewriteRule ^index.html$ /index.php [R]
+RewriteRule ^index.php$ / [QSA,R]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^.*$ $0.php [L,QSA]
+RewriteCond %{THE_REQUEST} ([^\s]*)\.php(\?[^\s]*)?
+RewriteRule (.*) %1 [R=301,L]
+
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access 7 days"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType text/html "access plus 7 day"
+ExpiresByType text/x-javascript "access 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresByType application/x-shockwave-flash "access 1 year"
+</IfModule>
+
+
+<IfModule mod_setenvif.c>
+BrowserMatch "MSIE" force-no-vary
+BrowserMatch "Mozilla/4.[0-9]{2}" force-no-vary
+</IfModule>
+
+<ifModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+</ifModule>
+
+<IfModule mod_headers.c>
+<FilesMatch «\.(js|css|xml|gz|html)$«>
+Header append Vary: Accept-Encoding
+</FilesMatch>
+</IfModule>
+
+#RewriteCond %{HTTP_HOST} ^qazprice.kz
+
+Redirect /armatura.html /armatura.php
+Redirect /katanka.html /katanka.php
+Redirect /kvadrat.html /kvadrat.php
+Redirect /krug.html /krug.php
+Redirect /list.html /list.php
+Redirect /polosa.html /polosa.php
+Redirect /provoloka.html /provoloka.php
+Redirect /profnastil.html /profnastil.php
+Redirect /setka.html /setka.php
+Redirect /truba.html /truba.php
+Redirect /truba-profilnaya.html /truba-profilnaya.php
+Redirect /ugolok.html /ugolok.php 
+Redirect /shveller.html /shveller.php
